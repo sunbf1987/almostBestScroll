@@ -1,10 +1,15 @@
 
 import btScroll from "./almostBestScroll";
+
 //调用方法
 btScroll.onScroll(function(){
-	console.log('RAF开启')
+	let greet=document.createElement('div');
+	greet.textContent="RAF开启";
+	document.getElementById('root').appendChild(greet);
 });
 
 btScroll.onScrollEnd(function(){
-	console.log('RAF关闭')
+	let greet=document.createElement('div');
+	greet.textContent="RAF关闭";
+	document.getElementById('root').appendChild(greet);
 });
